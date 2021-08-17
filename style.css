@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    background: url(back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(0.5px);
+    overflow: hidden;
+}
+.outer1{
+    border: 1px solid rgb(69, 69, 228);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(56, 56, 223);
+}
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+}
+.section{
+    
+    display: flex;
+     height: 100vh; 
+    /* width: 220vh; */
+    /* horizontally */
+    align-items: center;  
+    /* vertically */
+    justify-content: center; 
+}
+
+.container{
+    border: 1px solid rgb(52, 39, 245);
+    box-shadow: 5px 5px 20px rgb(56, 56, 223);
+    border-radius: 10px;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    /* horizontally */
+    align-items: center;  
+    /* vertically */
+    justify-content: center;  
+}
+.inp
+{
+    background: transparent;
+    box-shadow: 2px 2px 25px rgb(0, 0, 0);
+}
+.login-btn{
+    display: flex;
+    justify-content: center;    
+}
+.admin{
+    text-shadow: 1px 1px 5px rgb(44, 107, 241);
+}
+.inp::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+    
+    opacity: 1; /* Firefox */
+  }
+  .in
+  {
+      width: 300px;
+  }
+.manager-btn{
+outline-color:  rgb(63,20,37);
+background: transparent;
+}
+.manager-btn:hover{
+    background-color: rgb(63,20,37);
+    color: rgb(255, 255, 255);
+    outline-color:  rgb(63,20,37);
+} 
+.logo:hover {
+    animation: mymove 1s;
+  }
+  @keyframes mymove {
+    from {transform: rotateZ(360deg);}
+    to{transform: rotateZ(-360deg);}
+  }
+
+  @media screen and (max-width: 375px) {
+    .container{
+    width: 19rem;
+    height: 24rem;
+    }
+    .inp{
+        width: 280px; 
+        margin-left: 7px;
+    }
+  }
+  @media screen and (max-width: 281px) {
+    .container{
+    width: 15rem;
+    height: 23rem;
+    margin-left: 15px;
+    }
+    .inp{
+        width: 1rem;
+        height: 27px;
+        text-align: center;
+        align-items: center;
+        width: 230px; 
+        margin-left: 35px;
+    }
+    .btn-outline-primary{
+        width: 7rem;
+        height: 31px;
+        font-size: 13px;
+       
+    }
+    .admin{
+        font-size: 10px;
+    }
+    .logo{
+        height: 110px;
+        width: 150px;
+    }
+    .manager-btn{
+        width: 7rem;
+        height: 34px;
+        font-size: 12px;
+    }
+
+  }
